@@ -22,8 +22,9 @@ uri = 'mongodb://' + config.user + ':' + config.pwd + '@' + config.server + ':' 
 # @data save mongodb field
 # @operation save mongodb field default value 'append'
 # @date 2017/12/07 16:30
-# 先在mongodb中插入一条自增数据 db.sequence.insert({ "_id" : "version","seq" : 1})
+#
 
+#先手动在mongodb中插入一条自增数据 db.sequence.insert({ "_id" : "version","seq" : 1})
 def insert(path, data, operation='append'):
     client = MongoClient(uri)
     resources = client.smartdb.resources

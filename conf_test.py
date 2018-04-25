@@ -1,8 +1,9 @@
 # -*- coding: UTF-8 -*-
-# the configuration file of test environment
+# 测试环境的配置文件：linux系统
 
-#path configure
-data_root_path = '/data/app/smart/data'
+
+#爬取的数据文件保存路径
+data_root_path = '/data/scratch/data'
 
 #mongodb configure
 user = "smart"

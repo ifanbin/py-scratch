@@ -3,9 +3,9 @@
 import requests
 import bs4
 import json
-import MainUtil
+import Handle
 
-resources_file_path = '/resources/train/trainNameList.ini'
+resources_file_path = '/trainNameList.txt'
 scratch_url = 'http://www.59178.com/checi/'
 
 
@@ -22,4 +22,4 @@ def scratch_train_number(scratch_url, old_trains):
 
 
 if __name__ == '__main__':
-    MainUtil.main(resources_file_path, scratch_url, scratch_train_number)
+    Handle.handle(resources_file_path, scratch_url, scratch_train_number)

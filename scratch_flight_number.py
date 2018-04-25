@@ -3,9 +3,9 @@
 
 import requests
 import bs4
-import MainUtil
+import Handle
 
-resources_file_path = '/resources/airplane/flightNameList.ini'
+resources_file_path = '/flightNameList.txt'
 scratch_url = 'http://www.variflight.com/sitemap.html?AE71649A58c77='
 
 
@@ -21,4 +21,4 @@ def scratch_flight_number(scratch_url, old_flights):
 
 
 if __name__ == '__main__':
-    MainUtil.main(resources_file_path, scratch_url, scratch_flight_number)
+    Handle.handle(resources_file_path, scratch_url, scratch_flight_number)

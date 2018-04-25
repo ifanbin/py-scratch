@@ -4,10 +4,10 @@ import re
 import requests
 import bs4
 import json
-import MainUtil
+import Handle
 
-# 相对路径，也是需要将此路径存入数据库
-resources_file_path = '/resources/movie/cinemaNameList.ini'
+# 文件保存路径，相对路径
+resources_file_path = '/cinemaNameList.txt'
 scratch_url = 'http://theater.mtime.com/China_Beijing/'
 
 
@@ -33,4 +33,4 @@ def scratch_latest_movies(scratch_url, old_movies):
 
 
 if __name__ == '__main__':
-    MainUtil.main(resources_file_path, scratch_url, scratch_latest_movies)
+    Handle.handle(resources_file_path, scratch_url, scratch_latest_movies)

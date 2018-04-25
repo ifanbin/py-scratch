@@ -1,10 +1,10 @@
 # -*- coding: UTF-8 -*-
-# the configuration file of develop environment
+# 开发环境的配置文件：windows系统
 
-# path configure
-data_root_path = 'E:/APK98_GNBJ_SMARTSERVER/Proj-gionee-data/smart/data'
+# 爬取数据的存储路径
+data_root_path = 'E:/scratch/data'
 
-# mongodb configure
+# mongodb的配置
 user = "cmc"
 pwd = "123456"
 server = "localhost"

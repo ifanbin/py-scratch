@@ -2,9 +2,9 @@
 import requests
 import bs4
 import json
-import MainUtil
+import Handle
 
-resources_file_path = '/resources/airplane/airportNameList.ini'
+resources_file_path = '/airportNameList.txt'
 scratch_url = 'https://data.variflight.com/profiles/profilesapi/search'
 
 
@@ -20,4 +20,4 @@ def scratch_airport_name(scratch_url, old_airports):
 
 
 if __name__ == '__main__':
-    MainUtil.main(resources_file_path, scratch_url, scratch_airport_name)
+    Handle.handle(resources_file_path, scratch_url, scratch_airport_name)

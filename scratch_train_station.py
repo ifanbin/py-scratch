@@ -3,9 +3,9 @@
 import requests
 import bs4
 import random
-import MainUtil
+import Handle
 
-resources_file_path = '/resources/train/trainStationNameList.ini'
+resources_file_path = '/trainStationNameList.txt'
 scratch_url = 'http://www.smskb.com/train/'
 
 
@@ -35,4 +35,4 @@ def scratch_train_station(scratch_url, old_stations):
 
 
 if __name__ == '__main__':
-    MainUtil.main(resources_file_path, scratch_url, scratch_train_station)
+    Handle.handle(resources_file_path, scratch_url, scratch_train_station)
