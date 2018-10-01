@@ -21,4 +21,5 @@ def scratch_flight_number(scratch_url, old_flights):
 
 
 if __name__ == '__main__':
+    #执行scratch_flight_number函数，传入resources_file_path，scratch_url参数
     Handle.handle(resources_file_path, scratch_url, scratch_flight_number)
